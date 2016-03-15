@@ -18,3 +18,5 @@ RUN chmod u+x /assets/setup.sh; /assets/setup.sh
 EXPOSE 1521
 EXPOSE 8080
 # End Adaptation
+
+CMD bash -C '/usr/sbin/startup.sh';'bash' 
