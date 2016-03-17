@@ -14,9 +14,10 @@ RUN apt-get update && apt-get install -y \
 # Adapted from https://github.com/wnameless/docker-oracle-xe-11g
 # Thank you Wei-Ming Wu <wnameless@gmail.com>!
 ADD assets /assets
-RUN chmod u+x /assets/setup.sh; /assets/setup.sh
+RUN chmod u+x /assets/setup.sh
+RUN /assets/setup.sh
 EXPOSE 1521
 EXPOSE 8080
 # End Adaptation
 
-CMD bash -C '/usr/sbin/startup.sh';'bash' 
+CMD bash -C '/usr/sbin/startup.sh';'bash'
