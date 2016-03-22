@@ -2,9 +2,6 @@ from training4developers/node:latest
 
 MAINTAINER Eric Greene <eric@training4developers.com>
 
-ENV NODE_VERSION 4.4.0
-ENV NODE_ARCHIVE node-v$NODE_VERSION-linux-x64.tar.xz
-
 # Update & Install Ubuntu Packages
 RUN apt-get update && apt-get install -y \
 		python \

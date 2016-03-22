@@ -14,3 +14,10 @@ service oracle-xe start
 export ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe
 
 $ORACLE_HOME/bin/sqlplus system/oracle@localhost < /opt/app/init.sql
+
+cd /opt/app
+mkdir ~/app
+mv node_modules ~/app
+ln -s ~/app/node_modules .
+npm rebuild
+npm install oracledb
